@@ -43,9 +43,7 @@ def send_welcome(message):
     bot_id =bot.get_me().id
     bot.reply_to(message, f"ID: {bot_id}")
 
-
 #КОД ДОБАВЛЯТЬ ВЫШЕ
-
 # Handle all other messages with content_type 'text' (content_types defaults to ['text'])
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
